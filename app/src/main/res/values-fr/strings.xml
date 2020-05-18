@@ -1,15 +1,158 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Replikapp</string>
-    <string name="registerFromLogin_link"><u>Je n\'ai pas de compte !</u></string>
-    <string name="loginFromRegister_link"><u>J\'ai déjà un compte !</u></string>
-    <string name="bibli">Répliques</string>
-    <string name="profil">Profil</string>
-    <string name="store">Boutique</string>
+
+    <!-- Global-->
+    <string name="error">Erreur !</string>
+    <string name="success">Succès !</string>
+
+    <!-- Splash Screen-->
+    <string name="Replikapp">ReplikApp</string>
+
+
+    <!-- Login Screen-->
+    <string name="textLogin">CONNEXION</string>
+    <string name="addressMail">Adresse Mail</string>
+    <string name="password">Mot de passe</string>
+    <string name="logToReg">Pas encore de compte ?</string>
+    <string name="logBtn">CONNEXION</string>
+    <string name="resetPass">Mot de passe Oublié ?</string>
+    <string name="mail_empty">Veuillez entrer un E-mail !</string>
+    <string name="pw_empty">Veuillez entrer un Mot de passe !</string>
+    <string name="login_fail">Aucun utilisateur trouvé !</string>
+    <string name="signInG">Connectez-vous avec Google</string>
+    <string name="googleErr">Une erreur s\'est produite lors de l\'authentification Google</string>
+
+    <!-- Register Screen-->
+    <string name="textRegister">S\'INSCRIRE</string>
+    <string name="textRErr"></string>
+    <string name="regToLog">Déjà un compte ?</string>
+    <string name="regBtn">ENREGISTRER</string>
+    <string name="passwordConf">Confirmation</string>
+    <string name="short_pw">Veuillez entrer un mot de passe à 8 caractères !</string>
+    <string name="reg_fail">Erreur ! Veuillez ré-essayer dans un instant !</string>
+
+    <!-- Reset Password Sreen -->
+    <string name="textRPassword">RECUPERER SON MOT DE PASSE</string>
+    <string name="resetBtn">RECUPERER</string>
+    <string name="cancelRPBtn">ANNULER</string>
+    <string name="email_sent">E-mail sent !</string>
+
+
+    <!-- Main informations -->
     <string name="coin_amount_indicator">0x</string>
-    <string name="buy_coin_title">GAGNER DES COINS</string>
-    <string name="buy_coin_desc">Visionner une publicité :</string>
-    <string name="buy_coin_amount">150 Coins</string>
-    <string name="receive_coin">RECEVOIR</string>
-    <string name="buy_game">ACHETER UN JEU</string>
+
+
+    <!-- fragment Bibli -->
+    <string name="bibli">Répliques</string>
+    <string name="textJeux">Jeux</string>
+    <string name="textTetris">Tetris</string>
+    <string name="textSpaceI">Space Invaders</string>
+    <string name="textPacMan">Pac Man</string>
+
+    <!-- fragment Profil -->
+    <string name="profil">Profil</string>
+    <string name="mailInfo">Email :</string>
+    <string name="phoneInfo">Téléphone :</string>
+    <string name="editProfilBtn">Modifier</string>
+    <string name="logoutBtn">Déconnexion</string>
+
+    <string name="dialogTitle"> Choisissez une action</string>
+    <string name="editProfilPic"> Editer l\'image de profil</string>
+    <string name="editCoverPic"> Editer l\'image de couverture</string>
+    <string name="editProfileName"> Editer le nom</string>
+    <string name="editProfilePhone"> Editer le numéro de téléphone</string>
+
+    <string name="messUpdatePic">Modification de l\'image de profil</string>
+    <string name="messUpdateCover">Modification de l\'image de couverture</string>
+    <string name="messUpdateName">Modification du nom</string>
+    <string name="messUpdatePhone">Modification du numéro de télép hone</string>
+
+    <string name="camera">Caméra</string>
+    <string name="gallery">Galerie</string>
+    <string name="pickImg">Choisissez le support</string>
+
+
+    <string name="toastRequestCDenied">Veuillez autoriser la permission d\'accès à la caméra et au gestionnaire de fichiers</string>
+    <string name="toastRequestGDenied">Veuillez autoriser la permission d\'accès au gestionnaire de fichiers</string>
+
+    <string name="updateName">Modifier votre nom</string>
+    <string name="updatePhone">Modifier votre numéro de téléphone</string>
+
+    <string name="nameUpdateET">Nom</string>
+    <string name="phoneUpdateET">Numéro de téléphone</string>
+
+    <string name="updateText">Modifier</string>
+    <string name="cancelUpdateBtn">Annuler</string>
+
+    <string name="errorETName">Veuillez entrer un nom</string>
+    <string name="errorETPhone">Veuillez entrer un numéro de téléphone</string>
+
+
+
+
+    <!-- fragment Shop -->
+    <string name="store">Boutique</string>
+    <string name="textBuyCoins">AVOIR COINS</string>
+    <string name="buy_coin_amount">150 coins</string>
+    <string name="textBuy">ACHETER VIP</string>
+    <string name="textGame">GAME</string>
+    <string name="testHaveVIP">Vous l\'avez déjà</string>
+    <string name="titleDialogvip"> ACHETER LE VIP ?</string>
+    <string name="messageDialogvip"> Voulez-vous le prendre ?</string>
+
+    <!-- Edit Profil Screen-->
+    <string name="username"> Pseudo </string>
+    <string name="phoneNum"> N° de téléphone </string>
+
+    <!-- Toolbar Menu -->
+    <string name="textNightMode">Night mode</string>
+
+    <!-- Alert Dialog -->
+    <string name="logOutADTitle"> ATTENTION</string>
+    <string name="logOutADMessage"> Vous êtes sûr de vouloir vous déconnecter ?</string>
+    <string name="logOutADYes"> OUI</string>
+    <string name="logOutADNo"> NON</string>
+
+
+    <!-- Infinity Invaders Game -->
+    <string name="scoreII">Score : </string>
+    <string name="pause">Pause</string>
+    <string name="background">Fonds d\'écran</string>
+    <string name="title">titre</string>
+    <string name="easy">Facile</string>
+    <string name="normal">Normal</string>
+    <string name="hard">Difficile</string>
+    <string name="score">score</string>
+    <string name="home">Acceuil</string>
+    <string name="play">jouer</string>
+    <string name="highScore">Meilleur score : </string>
+    <string name="mode">mode</string>
+    <string name="mode2">"Mode : "</string>
+    <string name="nothing">- - -</string>
+    <string name="trophy">trophée</string>
+    <string name="song">mousique</string>
+    <string name="toastInvaders1">Atteindre un score de 10 sur le mode Facile</string>
+    <string name="toastInvaders2">Atteindre un score de 20 sur le mode Normal</string>
+    <string name="newhs">Noveau meilleur score : </string>
+
+    <!-- Super Boule Game -->
+    <string name="quitGame">Quitter</string>
+    <string name="quitGameConf">Confirmer l\'opération ?</string>
+    <string name="positiveAnswer">Oui !</string>
+    <string name="negativeAnswer">Non !</string>
+    <string name="terminatedGameText">Partie terminée !</string>
+    <string name="touchScreen">Touchez l\'écran pour commencer !</string>
+    <string name="lvl1">Niveau 1</string>
+    <string name="lvl2">Niveau 2</string>
+    <string name="lvl3">Niveau 3</string>
+    <string name="lvl4">Niveau 4</string>
+    <string name="unlockLvl">Vous devez terminer le niveau précédent ! !</string>
+    <string name="inProgress">En Cours : </string>
+    <string name="finished">Terminé : </string>
+    <string name="quest1">Débloquer les 4 niveaux</string>
+    <string name="quest2">Détruire 50 briques</string>
+    <string name="quest3">Détruire 100 briques</string>
+    <string name="quest4">Détruire 150 briques</string>
+    <string name="quest5">Détruire 1000 briques</string>
 </resources>

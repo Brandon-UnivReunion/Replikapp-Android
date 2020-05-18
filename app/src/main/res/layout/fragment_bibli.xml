@@ -2,12 +2,135 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- VUE STORE FRAGMENT -->
+    <!-- RESUME
+            - ScrollView pour permettre le scroll vertical
+            - ConstraintLayout pour la gestion des placements
+            - Linear Layout d'information de la vue, avec une image en background
+            - cardView de Material Design pour la redirection vers les jeux
+
+    -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/store_constraintL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- LinearLayout Principal-->
+            <LinearLayout
+                android:id="@+id/store_main_linearL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="@id/store_constraintL"
+                app:layout_constraintRight_toRightOf="@id/store_constraintL"
+                app:layout_constraintTop_toTopOf="@id/store_constraintL"
+                app:layout_constraintBottom_toBottomOf="@id/store_constraintL"
+                android:orientation="vertical">
+
+                <!-- LinearLayout composé d'une image de fond et d'un texte de présentation de la partie jeux -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:id="@+id/store_buy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/textGame"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/pixel"
+                        android:gravity="center"
+                        android:textSize="40sp"
+                        android:shadowColor="@color/white"
+                        android:shadowDx="-5"
+                        android:shadowDy="-5"
+                        android:shadowRadius="5"
+                        android:background="@drawable/replicas_bannes_icon"
+                        />
+
+                </LinearLayout>
+
+                <!-- LinearLayout comportant les cardViews des jeux -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    >
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/infinityInvadersMCV"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="16dp"
+                        app:cardElevation="12dp"
+                        app:cardCornerRadius="50dp"
+                        android:layout_gravity="center"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center"
+
+                            >
+
+                            <ImageView
+                                android:layout_width="125dp"
+                                android:layout_height="125dp"
+                                android:src="@drawable/game_logo_i" />
 
 
-    <TextView
-        android:layout_margin="25dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="BIBLI MON FRERE"/>
+
+                        </LinearLayout>
+
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/superBouleMCV"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="16dp"
+                        app:cardElevation="12dp"
+                        app:cardCornerRadius="50dp"
+                        android:layout_gravity="center"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            >
+
+                            <ImageView
+                                android:layout_width="125dp"
+                                android:layout_height="125dp"
+                                android:src="@drawable/game_logo_sp" />
+
+
+                        </LinearLayout>
+
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
 </FrameLayout>

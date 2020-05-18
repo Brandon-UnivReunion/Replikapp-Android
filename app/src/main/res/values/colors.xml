@@ -3,4 +3,16 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="colorError">#D81B60</color>
+    <color name='lightBlue'>#05c2f9</color>
+    <color name='white'>#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="grey">#323232</color>
+    <color name="greyL">#767676</color>
+
+    <!-- Night Mode -->
+    <color name="greyNM">#645F5F</color>
+    <color name="blackNM">#312C2C</color>
+    <color name="lightGreyNM">#7A7A7A</color>
+
 </resources>
